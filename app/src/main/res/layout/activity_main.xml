@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnLoginA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvForgetPasswordA"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="@string/login"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edt_PasswrodLoginA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_UserEmailLoginA"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:hint="@string/password"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edt_UserEmailLoginA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogin"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:hint="@string/email"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/lytSignInA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLoginA"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/notHaveAcount" />
+
+        <TextView
+            android:id="@+id/tvSigninLoginA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/signIn"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvForgetPasswordA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_PasswrodLoginA"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="@string/forgetPassword"
+        android:textColor="@color/teal_200" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_chatsapp" />
+</RelativeLayout>
